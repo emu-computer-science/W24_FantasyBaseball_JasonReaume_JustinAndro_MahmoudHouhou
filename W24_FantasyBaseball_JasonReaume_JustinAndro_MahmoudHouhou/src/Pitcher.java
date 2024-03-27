@@ -1,4 +1,4 @@
 
-public class Pitcher {
+public class Pitcher extends Player {
 
 }

@@ -1,4 +1,4 @@
 
-public class Batter {
+public class Batter extends Player {
 
 }

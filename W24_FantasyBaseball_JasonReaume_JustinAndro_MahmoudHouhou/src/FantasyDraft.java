@@ -17,7 +17,7 @@ public class FantasyDraft {
 		stubTeam.remove();
 		stubTeam.display();
 		stubTeam.sortPositions();
-		
+
 		stubPlayer.setStatus("a");
 		stubPlayer.getStatus();
 		stubPlayer.getPosition();
