@@ -6,7 +6,8 @@ import java.util.Collections;
 
 
 public class Team implements Serializable {
-    private ArrayList<Player> team = new ArrayList<>();// here
+    private ArrayList<Player> team = new ArrayList<>();
+    private ArrayList<Player> draftedOrder = new ArrayList<>();
 
     private String name;
 
@@ -35,6 +36,7 @@ public class Team implements Serializable {
                 teammate.assignWeight(teammate.getPosition());
                 System.out.println("Drafted: " + teammate.toString() + "\n");
                 team.add(teammate);
+                draftedOrder.add(teammate);
                 catcherCount--;
                 return true;
             case "1B":
@@ -45,6 +47,7 @@ public class Team implements Serializable {
                 teammate.assignWeight(teammate.getPosition());
                 System.out.println("Drafted: " + teammate.toString() + "\n");
                 team.add(teammate);
+                draftedOrder.add(teammate);
                 firstBaseCount--;
                 return true;
             case "2B":
@@ -55,6 +58,7 @@ public class Team implements Serializable {
                 teammate.assignWeight(teammate.getPosition());
                 System.out.println("Drafted: " + teammate.toString() + "\n");
                 team.add(teammate);
+                draftedOrder.add(teammate);
                 secondBaseCount--;
                 return true;
             case "3B":
@@ -65,6 +69,7 @@ public class Team implements Serializable {
                 teammate.assignWeight(teammate.getPosition());
                 System.out.println("Drafted: " + teammate.toString() + "\n");
                 team.add(teammate);
+                draftedOrder.add(teammate);
                 thirdBaseCount--;
                 return true;
             case "SS":
@@ -75,6 +80,7 @@ public class Team implements Serializable {
                 teammate.assignWeight(teammate.getPosition());
                 System.out.println("Drafted: " + teammate.toString() + "\n");
                 team.add(teammate);
+                draftedOrder.add(teammate);
                 SSC--;
                 return true;
             case "LF":
@@ -85,6 +91,7 @@ public class Team implements Serializable {
                 teammate.assignWeight(teammate.getPosition());
                 System.out.println("Drafted: " + teammate.toString() + "\n");
                 team.add(teammate);
+                draftedOrder.add(teammate);
                 leftFieldCount--;
                 return true;
             case "CF":
@@ -95,6 +102,7 @@ public class Team implements Serializable {
                 teammate.assignWeight(teammate.getPosition());
                 System.out.println("Drafted: " + teammate.toString() + "\n");
                 team.add(teammate);
+                draftedOrder.add(teammate);
                 centerFieldCount--;
                 return true;
             case "RF":
@@ -105,6 +113,7 @@ public class Team implements Serializable {
                 teammate.assignWeight(teammate.getPosition());
                 System.out.println("Drafted: " + teammate.toString() + "\n");
                 team.add(teammate);
+                draftedOrder.add(teammate);
                 rightFieldCount--;
                 return true;
             case "P":
@@ -119,6 +128,7 @@ public class Team implements Serializable {
                         teammate.assignWeight(teammate.getPosition());
                         System.out.println("Drafted: " + teammate.toString() + "\n");
                         team.add(teammate);
+                        draftedOrder.add(teammate);
                         pitcherCount--;
                         return true;
                     case 4:
@@ -126,6 +136,7 @@ public class Team implements Serializable {
                         teammate.assignWeight(teammate.getPosition());
                         System.out.println("Drafted: " + teammate.toString() + "\n");
                         team.add(teammate);
+                        draftedOrder.add(teammate);
                         pitcherCount--;
                         return true;
                     case 3:
@@ -133,6 +144,7 @@ public class Team implements Serializable {
                         teammate.assignWeight(teammate.getPosition());
                         System.out.println("Drafted: " + teammate.toString() + "\n");
                         team.add(teammate);
+                        draftedOrder.add(teammate);
                         pitcherCount--;
                         return true;
                     case 2:
@@ -140,6 +152,7 @@ public class Team implements Serializable {
                         teammate.assignWeight(teammate.getPosition());
                         System.out.println("Drafted: " + teammate.toString() + "\n");
                         team.add(teammate);
+                        draftedOrder.add(teammate);
                         pitcherCount--;
                         return true;
                     case 1:
@@ -147,6 +160,7 @@ public class Team implements Serializable {
                         teammate.assignWeight(teammate.getPosition());
                         System.out.println("Drafted: " + teammate.toString() + "\n");
                         team.add(teammate);
+                        draftedOrder.add(teammate);
                         pitcherCount--;
                         return true;
                     default:
@@ -326,6 +340,13 @@ public class Team implements Serializable {
                 return false;
             default:
                 return false;
+        }
+    }
+    public void displayStars() {
+        System.out.println("Team: " + name + " (STARS)");
+        for (int i = 0; i < draftedOrder.size(); i++) {
+            Player player = draftedOrder.get(i);
+            System.out.println((i + 1) + ". " + player.getName() + " (" + player.getPosition() + ")");
         }
     }
 }

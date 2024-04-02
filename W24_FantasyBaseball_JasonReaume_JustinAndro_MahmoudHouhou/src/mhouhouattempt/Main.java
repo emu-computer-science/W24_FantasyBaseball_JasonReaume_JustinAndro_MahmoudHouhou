@@ -52,8 +52,8 @@ public class Main {
                 break;
             } else if(arguments[0].equalsIgnoreCase("help")){
                 help();
-            } else if(arguments[0].equalsIgnoreCase("STARS")){
-                System.out.println("This is a WIP");;
+            } else if(arguments[0].equalsIgnoreCase("STARS") && arguments.length - 1 == 1){
+                majorleague.getTeam(arguments[1]).displayStars();
             } else if(arguments[0].equalsIgnoreCase("EVALFUN")){
                 System.out.println("This is a WIP");;
             } else if(arguments[0].equalsIgnoreCase("PVALFUN")){
