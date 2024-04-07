@@ -1,0 +1,104 @@
+S:\Java\bin\java.exe "-javaagent:C:\Program Files\JetBrains\IntelliJ IDEA 2023.2.4\lib\idea_rt.jar=50320:C:\Program Files\JetBrains\IntelliJ IDEA 2023.2.4\bin" -Dfile.encoding=UTF-8 -classpath S:\java\jre\lib\charsets.jar;S:\java\jre\lib\deploy.jar;S:\java\jre\lib\ext\access-bridge-32.jar;S:\java\jre\lib\ext\cldrdata.jar;S:\java\jre\lib\ext\dnsns.jar;S:\java\jre\lib\ext\jaccess.jar;S:\java\jre\lib\ext\jfxrt.jar;S:\java\jre\lib\ext\localedata.jar;S:\java\jre\lib\ext\nashorn.jar;S:\java\jre\lib\ext\sunec.jar;S:\java\jre\lib\ext\sunjce_provider.jar;S:\java\jre\lib\ext\sunmscapi.jar;S:\java\jre\lib\ext\sunpkcs11.jar;S:\java\jre\lib\ext\zipfs.jar;S:\java\jre\lib\javaws.jar;S:\java\jre\lib\jce.jar;S:\java\jre\lib\jfr.jar;S:\java\jre\lib\jfxswt.jar;S:\java\jre\lib\jsse.jar;S:\java\jre\lib\management-agent.jar;S:\java\jre\lib\plugin.jar;S:\java\jre\lib\resources.jar;S:\java\jre\lib\rt.jar;C:\Users\User\IdeaProjects\W24_FantasyBaseball_JasonReaume_JustinAndro_MahmoudHouhou\out\production\finalprojectmayb mhouhouattempt.Main
+Please enter one of the following commands:
+	ODRAFT [playername] [league member]
+	IDRAFT [playername]
+	OVERALL [position]
+	POVERALL
+	TEAM [team name]
+	SAVE
+	RESTORE
+	Help
+	Quit
+	pvalfun
+	evalfun
+	stars
+
+->overall 1B
+Guerrero, V TOR 1B 0.311
+Freeman, F ATL 1B 0.3
+Rivas, A CHC 1B 0.318
+Ruf, D SF 1B 0.271
+Gurriel, Y HOU 1B 0.319
+Belt, B SF 1B 0.274
+Votto, J CIN 1B 0.266
+Cron, C COL 1B 0.281
+->idraft "Machado, M"
+Drafted: Machado, M SD 3B 0.278
+
+->odraft "Arenado, N" B
+Drafted: Arenado, N STL 3B 0.255
+
+->odraft "Alonso, P" C
+Drafted: Alonso, P NYM 1B 0.262
+
+->odraft "Soto, J" D
+Drafted: Soto, J WSH RF 0.313
+
+->idraft "Abreu, J"
+Drafted: Abreu, J CWS 1B 0.261
+
+->odraft "Altuve, J" B
+Drafted: Altuve, J HOU 2B 0.278
+
+->team a
+1B Abreu, J
+3B Machado, M
+
+->team b
+2B Altuve, J
+3B Arenado, N
+
+->team c
+1B Alonso, P
+
+->team d
+RF Soto, J
+
+->stars A
+Team: A (STARS)
+1. Machado, M (3B)
+2. Abreu, J (1B)
+->stars D
+Team: D (STARS)
+1. Soto, J (RF)
+->help
+Please enter one of the following commands:
+	ODRAFT [playername] [league member]
+	IDRAFT [playername]
+	OVERALL [position]
+	POVERALL
+	TEAM [team name]
+	SAVE
+	RESTORE
+	Help
+	Quit
+	pvalfun
+	evalfun
+	stars
+->poverall
+McCullers, L HOU P 162.1
+Davies, Z CHC P 148.0
+Castillo, L CIN P 187.2
+Gant, J MIN P 110.0
+Snell, B SD P 128.2
+Cease, D CWS P 165.2
+Pivetta, N BOS P 155.0
+->save 
+Enter a file name: txtz
+->quit
+->restore 
+
+Enter the name of existing file: txtz
+->team a
+1B Abreu, J
+3B Machado, M
+
+->team b
+2B Altuve, J
+3B Arenado, N
+
+->team c
+1B Alonso, P
+
+->team d
+RF Soto, J
