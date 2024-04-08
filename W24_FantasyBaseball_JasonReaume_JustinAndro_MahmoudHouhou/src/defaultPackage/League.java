@@ -1,4 +1,4 @@
-package mhouhouattempt;
+package defaultPackage;
 
 
 import java.util.ArrayList;

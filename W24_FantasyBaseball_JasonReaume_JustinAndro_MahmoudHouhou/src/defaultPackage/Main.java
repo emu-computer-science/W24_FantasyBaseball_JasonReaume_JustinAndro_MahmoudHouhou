@@ -1,4 +1,4 @@
-package mhouhouattempt;
+package defaultPackage;
 
 import java.io.*;
 import java.util.ArrayList;
@@ -56,7 +56,7 @@ public class Main {
                 majorleague.getTeam(arguments[1]).displayStars();
             } else if(arguments[0].equalsIgnoreCase("EVALFUN")){
                 System.out.println("This is a WIP");;
-            } else if(arguments[0].equalsIgnoreCase("PVALFUN")){
+            } else if(arguments[0].equalsIgnoreCase("PEVALFUN")){
                 System.out.println("This is a WIP");;
             } else if(arguments[0].equalsIgnoreCase("save")){
                 System.out.print("Enter a file name: ");
@@ -76,7 +76,7 @@ public class Main {
     static void help(){
         System.out.println("Please enter one of the following commands:\n\tODRAFT [playername] [league member]\n\t" +
                 "IDRAFT [playername]\n\tOVERALL [position]\n\tPOVERALL\n\tTEAM [team name]\n\tSAVE\n\tRESTORE\n\tHelp\n\tQuit\n\t" +
-                "pvalfun\n\tevalfun\n\tstars");
+                "pevalfun\n\tevalfun\n\tstars");
     }
 
 
